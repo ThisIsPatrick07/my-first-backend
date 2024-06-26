@@ -10,11 +10,17 @@ app.get('/', (req, res) => {
 });
 
 app.get('/twitter', (req, res) => {
-	res.send('niceboi.com');
+	res.send('niceboi');
 });
 
 app.get('/login', (req, res) => {
 	res.send('<h1>You have made a web app! Congrats!</h1>');
+});
+
+app.get('/bababooey', (req, res) => {
+	res.json({
+		name: 'bababooey'
+	})
 });
 
 app.listen(process.env.PORT, () => {
